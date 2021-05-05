@@ -43,6 +43,8 @@ body {
     text-decoration: none;
 }
 .top-header .search-vne{
+    height: 20px;
+    line-height: 30px;
     position: relative;
     margin-left: 15px;
     padding-left: 15px;
@@ -76,6 +78,9 @@ body {
 
 .footer{
     clear: both;
+     max-width: 1130px;
+     padding: 0 15px;
+    margin: 0 auto;
 }
 
 .footer  .inner-footer{
@@ -93,12 +98,14 @@ body {
     font-weight: bold;
 }
 .footer .inner-footer ul li{
-    text-decoration: none;
     display: inline-block;
     width: 100%;
     list-style: none;
     margin-bottom: 15px;
     
+}
+.footer .inner-footer ul li a{
+    text-decoration: none;
 }
 
 .footer .wrap-contact .contact.downloadapp{
@@ -123,4 +130,80 @@ body {
 .footer .wrap-contact .hotline {
     padding-top: 8px;
     border-top: 1px solid #E0E0E0;
+}
+
+.section_nav{
+    width: 100%;
+    float: left;
+}
+.section_nav .main_nav {
+    width: 100%;
+    float: left;
+    clear: both;
+    font-size: 14px;
+    border-bottom: 1px chartreuse;
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.7,1,.7,1);
+}
+.main_nav ul li{
+    float: left;
+    margin-left: 25px;
+}
+.main_nav{
+    height: 40px;
+    width: 100%;
+}
+.main_nav .parent, li a{
+    position: relative;
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+    list-style: none;
+}
+.main_nav .parent {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main_nav .all-menu span{
+   display: inline;
+   margin-top: 12px;
+   float: right;
+    
+}
+.main_nav .all-menu a {
+    display: inline;
+float: left;
+}
+
+.main_nav .all-menu .hamburger {
+    width: 16px;
+    height: 2px;
+    position: relative;
+    background: #E0E0E0;
+    display: block;
+    top: 2px;
+    margin-left: 8px;
+}
+
+.main_nav .all-menu .hamburger::before {
+    left: 0;
+    top: 10px;
+}
+.main_nav .all-menu .hamburger:after {
+    left: 0;
+    top: 5px;
+}
+.main_nav .all-menu .hamburger::before,
+.main_nav .all-menu .hamburger::after {
+    content: '';
+    width: 16px;
+    height: 2px;
+    background: #bdbdbd;
+    position: absolute;
 }
