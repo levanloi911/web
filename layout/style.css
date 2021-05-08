@@ -1,5 +1,6 @@
 body {
-    font-family: Tahoma;
+    /* font-family: Tahoma; */
+    font: 400 15px arial;
     font-size: 20px;
     width: inherit;
     margin: 0px auto;
@@ -222,4 +223,16 @@ float: left;
     transition-property: opacity, top, visible;
     -webkit-transition-timing-function: cubic-bezier(.7, 1, .7, 1);
     transition-timing-function: cubic-bezier(.7, 1, .7, 1);
+}
+
+/* content_right */
+.box-category.has-border {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.box-covid-2021 .inner-box-cv {
+    align-items: center;
+    background: #F7F7F7;
+    border: 1px solid #E5E5E5;
+    padding: 15px;
 }
