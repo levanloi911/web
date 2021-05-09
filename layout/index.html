@@ -11,33 +11,75 @@
 </head>
 
 <body>
-    <header class="top-header">
-        <div class="container">
-            <a href="home.html" data-medium="Logo" class="logo" title="VnExpress - Báo tiếng Việt nhiều người xem nhất">
-                <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v385/v2_2019/pc/graphics/logo.svg"
-                    alt="VnExpress - Bao tieng Viet nhieu nguoi xem nhat">
-            </a>
-            <span class="time-now"> 5/04/2021</span>
+    
+    <header class="section top-header" data-campaign="Header">
+        <div class="container ">
+            <a href="javascript:;" class="all-menu all-menu-tablet"><span class="hamburger"></span></a>
+            <h1> <a href="/" data-medium="Logo" class="logo" title="VnExpress - Báo tiếng Việt nhiều người xem nhất"
+                    onclick="trackingLogoHome('logo-header', this.href)">
+                    <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v387/v2_2019/pc/graphics/logo.svg"
+                        alt="VnExpress - Bao tieng Viet nhieu nguoi xem nhat">
+                </a>
+            </h1> <span class="time-now">Chủ nhật, 9/5/2021</span>
             <div class="right">
-                <a href="#" class="btn24hnew" title="Mới nhất">
-                    <img src="iconhome.png" width="14px" height="14px" alt="Mới nhất">
-                    Mới nhất
-                </a>
-                <a href="#" class="evne" title="VnEpress International">
-                    <img src="iconhome.png" width="14px" height="14px" alt="International">
-                    International
-                </a>
-
-                <form class="search-vne" action="https://timkiem.vnexpress.net">
+                <a href="/tin-tuc-24h" class="btn24hqua " title="Mới nhất">
+                    <svg class="ic ic-24h">
+                        <use xlink:href="#time">
+                            <svg id="time" viewBox="0 0 32 32">
+                                <path
+                                    d="M16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16c8.8 0 16-7.2 16-16s-7.2-16-16-16zM16 28c-6.6 0-12-5.4-12-12s5.4-12 12-12c6.6 0 12 5.4 12 12s-5.4 12-12 12z">
+                                </path>
+                                <path d="M18 8h-4v10h10v-4h-6v-6z"></path>
+                            </svg>
+                        </use>
+                    </svg>Mới nhất</a>
+                <a href="https://e.vnexpress.net/" class="evne" title="VnExpress International"><svg class="ic ic-evne">
+                        <use xlink:href="#letter-E">
+                            <svg id="letter-E" viewBox="0 0 32 32">
+                                <path fill="#9f224e" style="fill: var(--color1, #9f224e)"
+                                    d="M10.783 7.811h15.652v-4.226h-20.87v24.83h20.87v-4.226h-15.652v-5.811h7.304v-4.755h-7.304v-5.811z">
+                                </path>
+                                <path fill="#9f224e" style="fill: var(--color1, #9f224e)"
+                                    d="M28.5 32c0.828 0 1.5-0.682 1.5-1.524v-28.952c0-0.842-0.672-1.524-1.5-1.524h-25c-0.829 0-1.5 0.682-1.5 1.524v28.952c0 0.842 0.671 1.524 1.5 1.524h25zM26.586 9.396h-14.238v2.642h5.89c0.864 0 1.414 0.765 1.414 1.64v4.755c0 0.875-0.55 1.529-1.414 1.529h-5.89v2.642h14.238c0.864 0 1.414 0.766 1.414 1.64v4.226c0 0.875-0.55 1.529-1.414 1.529h-20.869c-0.865 0-1.717-0.655-1.717-1.529v-24.83c0-0.875 0.852-1.64 1.717-1.64h20.869c0.864 0 1.414 0.765 1.414 1.64v4.226c0 0.875-0.55 1.529-1.414 1.529z">
+                                </path>
+                                <path fill="#fff" style="fill: var(--color2, #fff)"
+                                    d="M28 28.471v-4.226c0-0.875-0.55-1.64-1.414-1.64h-14.238v-2.642h5.89c0.864 0 1.414-0.655 1.414-1.529v-4.755c0-0.875-0.55-1.64-1.414-1.64h-5.89v-2.642h14.238c0.864 0 1.414-0.655 1.414-1.529v-4.226c0-0.875-0.55-1.64-1.414-1.64h-20.869c-0.865 0-1.717 0.765-1.717 1.64v24.83c0 0.875 0.852 1.529 1.717 1.529h20.869c0.864 0 1.414-0.655 1.414-1.529zM26.435 7.811h-15.652v5.811h7.304v4.755h-7.304v5.811h15.652v4.226h-20.87v-24.83h20.87v4.226z">
+                                </path>
+                            </svg>
+                        </use>
+                    </svg>International</a>
+                <form class="search search-vne" action="https://timkiem.vnexpress.net" id="formSearchHeader">
                     <input id="keywordHeader" type="text" name="q" placeholder="Tìm kiếm" autocomplete="off">
-                    <button type="submit" title="Tìm kiếm" class="btn-search-vne" id="buttonSearchHeader">
-                        <img src="iconhome.png" width="14px" height="14px">
-                    </button>
+                    <button type="submit" title="Tìm kiếm" class="btn-search-vne" id="buttonSearchHeader"><svg
+                            class="ic ic-search">
+                            <use xlink:href="#Search">
+                                <svg id="Search" viewBox="0 0 32 32">
+                                    <path
+                                        d="M14 28c-7.72 0-14-6.28-14-14s6.28-14 14-14c7.72 0 14 6.28 14 14s-6.28 14-14 14zM14 4c-5.514 0-10 4.486-10 10s4.486 10 10 10c5.514 0 10-4.486 10-10s-4.486-10-10-10z">
+                                    </path>
+                                    <path
+                                        d="M31.414 28.586l-4.786-4.786c-0.821 1.057-1.771 2.007-2.828 2.828l4.786 4.786c0.185 0.186 0.406 0.334 0.648 0.435s0.503 0.153 0.766 0.153 0.523-0.052 0.766-0.153c0.243-0.101 0.463-0.249 0.648-0.435s0.333-0.406 0.434-0.649 0.152-0.503 0.152-0.765c0-0.263-0.052-0.523-0.152-0.765s-0.248-0.463-0.434-0.649z">
+                                    </path>
+                                </svg>
+                            </use>
+                        </svg></button>
                 </form>
-
-                <a href="javascript:void(0);" class="log_txt" title="Đăng nhập"> <img src="iconhome.png" width="20px"
-                        height="20px"> Đăng nhập</a>
-
+                <div id="myvne_taskbar">
+                    <div id="myvne" class="myvne_taskbar myvne_login_button"><a href="javascript:void(0);"
+                            class="log_txt" title="Đăng nhập"><svg class="ic ic-user">
+                                <use xlink:href="#User">
+                                    <svg id="User" viewBox="0 0 32 32">
+                                        <path
+                                            d="M16 16c4.418 0 8-3.582 8-8s-3.582-8-8-8c-4.418 0-8 3.582-8 8s3.582 8 8 8z">
+                                        </path>
+                                        <path
+                                            d="M32 26.4c0.003-0.766-0.214-1.516-0.627-2.161s-1.002-1.157-1.699-1.475c-4.312-1.876-8.972-2.818-13.674-2.764-4.702-0.054-9.362 0.888-13.674 2.764-0.696 0.318-1.286 0.83-1.699 1.475s-0.63 1.395-0.627 2.161v5.6h32v-5.6z">
+                                        </path>
+                                    </svg>
+                                </use>
+                            </svg> Đăng nhập</a></div>
+                    <div id="g_id_onload" style="position: fixed; top: 50px; right: 10px; z-index: 1001;"></div>
+                </div>
             </div>
         </div>
     </header>
@@ -186,9 +228,8 @@
                     <li class="li">
                         <a data-medium="Item-2" data-thumb="0"
                             href="https://video.vnexpress.net/tin-tuc/thoi-su/nhan-chung-ke-lai-vu-chay-8-nguoi-chet-4274606.html"
-                            title="Nhân chứng kể lại vụ cháy 8 người chết"
-                            data-itm-source="#vn_source=Home&amp;vn_campaign=ThuongVien&amp;vn_medium=Item-2&amp;vn_term=Desktop&amp;vn_thumb=0"
-                            data-itm-added="1"><span class="location-stamp">TP HCM</span>Căn nhà hai tầng sản xuất xi
+                            title="Nhân chứng kể lại vụ cháy 8 người chết">
+                            <span class="location-stamp">TP HCM</span>Căn nhà hai tầng sản xuất xi
                             đánh bóng gạch nằm trong hẻm đường Lạc Long Quân, quận 11, bốc cháy ngùn ngụt rồi phát ra
                             nhiều tiếng nổ, khiến 8 người thiệt mạng.</a>
                     </li>
@@ -197,25 +238,21 @@
                     <li>
                         <a data-medium="Item-3" data-thumb="0"
                             href="https://vnexpress.net/bo-truong-y-te-xet-nghiem-dien-rong-la-viec-song-con-4274339.html"
-                            title="Bộ trưởng Y tế: Xét nghiệm diện rộng là việc sống còn"
-                            data-itm-source="#vn_source=Home&amp;vn_campaign=ThuongVien&amp;vn_medium=Item-3&amp;vn_term=Desktop&amp;vn_thumb=0"
-                            data-itm-added="1">Bộ trưởng Y tế: Xét nghiệm diện rộng là việc sống còn</a>
+                            title="Bộ trưởng Y tế: Xét nghiệm diện rộng là việc sống còn">Bộ trưởng Y tế: Xét nghiệm
+                            diện rộng là việc sống còn</a>
                     </li>
                     <li class="li">
                         <a data-medium="Item-3" data-thumb="0"
                             href="https://vnexpress.net/bo-truong-y-te-xet-nghiem-dien-rong-la-viec-song-con-4274339.html"
-                            title="Bộ trưởng Y tế: Xét nghiệm diện rộng là việc sống còn"
-                            data-itm-source="#vn_source=Home&amp;vn_campaign=ThuongVien&amp;vn_medium=Item-3&amp;vn_term=Desktop&amp;vn_thumb=0"
-                            data-itm-added="1">Bộ trưởng Y tế Nguyễn Thanh Long chiều 7/5 nói xét nghiệm sàng lọc diện
+                            title="Bộ trưởng Y tế: Xét nghiệm diện rộng là việc sống còn">Bộ trưởng Y tế Nguyễn Thanh
+                            Long chiều 7/5 nói xét nghiệm sàng lọc diện
                             rộng là cách duy nhất để phát hiện dịch bệnh, "không còn lối đi nào khác".</a>
                     </li>
                 </ul>
                 <ul class="ul_content">
                     <li>
                         <a href="https://vnexpress.net/tien-hoa-trong-mua-dich-4273974.html" data-medium="Item-1"
-                            data-thumb="1" title="‘Tiến hóa’ trong mùa dịch"
-                            data-itm-source="#vn_source=Home&amp;vn_campaign=ThuongVien&amp;vn_medium=Item-1&amp;vn_term=Desktop&amp;vn_thumb=1"
-                            data-itm-added="1">‘Tiến hóa’ trong mùa dịch</a>
+                            title="‘Tiến hóa’ trong mùa dịch">‘Tiến hóa’ trong mùa dịch</a>
                     </li>
                     <li class="li">
                         <a data-medium="Item-1" data-thumb="1"
@@ -326,10 +363,7 @@
                     </h3>
                     <div class="thumb-art">
                         <a href="https://vnexpress.net/3-tinh-them-3-ca-nghi-covid-19-lien-quan-benh-vien-k-4274632.html"
-                            class="thumb thumb-5x3" title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K"
-                            data-medium="Item-4" data-thumb="1"
-                            data-itm-source="#vn_source=Home&amp;vn_campaign=ThuongVien&amp;vn_medium=Item-4&amp;vn_term=Desktop&amp;vn_thumb=1"
-                            data-itm-added="1">
+                            class="thumb thumb-5x3" title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K">
                             <picture>
                                 <!--[if IE 9]><video style="display: none;"><![endif]-->
                                 <source
@@ -337,15 +371,13 @@
                                 <!--[if IE 9]></video><![endif]-->
                                 <img itemprop="contentUrl" loading="lazy" intrinsicsize="680x408"
                                     alt="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K" class="lazy loading"
-                                    src="https://i1-vnexpress.vnecdn.net/2021/05/07/MinhCng-1620406662-3712-1620406780.jpg?w=120&amp;h=72&amp;q=100&amp;dpr=2&amp;fit=crop&amp;s=3QTCTjCLy0o72TqeqQBq8A"
-                                    data-ll-status="loading"></picture>
+                                    src="https://i1-vnexpress.vnecdn.net/2021/05/07/MinhCng-1620406662-3712-1620406780.jpg?w=120&amp;h=72&amp;q=100&amp;dpr=2&amp;fit=crop&amp;s=3QTCTjCLy0o72TqeqQBq8A">
+                            </picture>
                         </a>
                         <p class="description"><a
                                 href="https://vnexpress.net/3-tinh-them-3-ca-nghi-covid-19-lien-quan-benh-vien-k-4274632.html"
-                                title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K>" data-medium="Item-4"
-                                data-thumb="1"
-                                data-itm-source="#vn_source=Home&amp;vn_campaign=ThuongVien&amp;vn_medium=Item-4&amp;vn_term=Desktop&amp;vn_thumb=1"
-                                data-itm-added="1">Sở Y tế Hải Phòng, Nam Định, Quảng Ninh, sáng 8/5 đều thông báo ghi
+                                title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K>" data-medium="Item-4">Sở Y
+                                tế Hải Phòng, Nam Định, Quảng Ninh, sáng 8/5 đều thông báo ghi
                                 nhận mỗi nơi một ca dương tính mới liên quan Bệnh viện K Tân Triều ở Hà Nội.</a>
                         </p>
                     </div>
@@ -356,18 +388,13 @@
                 <article class="item-news item-news-common">
                     <h3 class="title-news">
                         <a href="https://vnexpress.net/3-tinh-them-3-ca-nghi-covid-19-lien-quan-benh-vien-k-4274632.html"
-                            title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K" data-medium="Item-4"
-                            data-thumb="1"
-                            data-itm-source="#vn_source=Home&amp;vn_campaign=ThuongVien&amp;vn_medium=Item-4&amp;vn_term=Desktop&amp;vn_thumb=1"
-                            data-itm-added="1">3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K</a>
+                            title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K" data-medium="Item-4">3 tỉnh
+                            thêm 3 ca nghi Covid-19 liên quan Bệnh viện K</a>
 
                     </h3>
                     <div class="thumb-art">
                         <a href="https://vnexpress.net/3-tinh-them-3-ca-nghi-covid-19-lien-quan-benh-vien-k-4274632.html"
-                            class="thumb thumb-5x3" title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K"
-                            data-medium="Item-4" data-thumb="1"
-                            data-itm-source="#vn_source=Home&amp;vn_campaign=ThuongVien&amp;vn_medium=Item-4&amp;vn_term=Desktop&amp;vn_thumb=1"
-                            data-itm-added="1">
+                            class="thumb thumb-5x3" title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K">
                             <picture>
                                 <!--[if IE 9]><video style="display: none;"><![endif]-->
                                 <source
@@ -380,10 +407,8 @@
                         </a>
                         <p class="description"><a
                                 href="https://vnexpress.net/3-tinh-them-3-ca-nghi-covid-19-lien-quan-benh-vien-k-4274632.html"
-                                title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K>" data-medium="Item-4"
-                                data-thumb="1"
-                                data-itm-source="#vn_source=Home&amp;vn_campaign=ThuongVien&amp;vn_medium=Item-4&amp;vn_term=Desktop&amp;vn_thumb=1"
-                                data-itm-added="1">Sở Y tế Hải Phòng, Nam Định, Quảng Ninh, sáng 8/5 đều thông báo ghi
+                                title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K>" data-medium="Item-4">Sở Y
+                                tế Hải Phòng, Nam Định, Quảng Ninh, sáng 8/5 đều thông báo ghi
                                 nhận mỗi nơi một ca dương tính mới liên quan Bệnh viện K Tân Triều ở Hà Nội.</a>
                         </p>
                     </div>
@@ -394,23 +419,16 @@
                 <article class="item-news item-news-common">
                     <h3 class="title-news">
                         <a href="https://vnexpress.net/3-tinh-them-3-ca-nghi-covid-19-lien-quan-benh-vien-k-4274632.html"
-                            title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K" data-medium="Item-4"
-                            data-thumb="1"
-                            data-itm-source="#vn_source=Home&amp;vn_campaign=ThuongVien&amp;vn_medium=Item-4&amp;vn_term=Desktop&amp;vn_thumb=1"
-                            data-itm-added="1">3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K</a>
+                            title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K" data-medium="Item-4">3 tỉnh
+                            thêm 3 ca nghi Covid-19 liên quan Bệnh viện K</a>
 
                     </h3>
                     <div class="thumb-art">
                         <a href="https://vnexpress.net/3-tinh-them-3-ca-nghi-covid-19-lien-quan-benh-vien-k-4274632.html"
-                            class="thumb thumb-5x3" title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K"
-                            data-medium="Item-4" data-thumb="1"
-                            data-itm-source="#vn_source=Home&amp;vn_campaign=ThuongVien&amp;vn_medium=Item-4&amp;vn_term=Desktop&amp;vn_thumb=1"
-                            data-itm-added="1">
+                            class="thumb thumb-5x3" title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K">
                             <picture>
-                                <!--[if IE 9]><video style="display: none;"><![endif]-->
                                 <source
                                     srcset="https://i1-vnexpress.vnecdn.net/2021/05/07/MinhCng-1620406662-3712-1620406780.jpg?w=220&amp;h=132&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=LOMt3UjQ4tPpbVQKBhBhtg 1x, https://i1-vnexpress.vnecdn.net/2021/05/07/MinhCng-1620406662-3712-1620406780.jpg?w=220&amp;h=132&amp;q=100&amp;dpr=2&amp;fit=crop&amp;s=-30VjsO3IWKV6KMvIQvNOw 2x">
-                                <!--[if IE 9]></video><![endif]-->
                                 <img itemprop="contentUrl" loading="lazy" intrinsicsize="680x408"
                                     alt="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K" class="lazy loading"
                                     src="https://i1-vnexpress.vnecdn.net/2021/05/07/MinhCng-1620406662-3712-1620406780.jpg?w=120&amp;h=72&amp;q=100&amp;dpr=2&amp;fit=crop&amp;s=3QTCTjCLy0o72TqeqQBq8A"
@@ -418,10 +436,8 @@
                         </a>
                         <p class="description"><a
                                 href="https://vnexpress.net/3-tinh-them-3-ca-nghi-covid-19-lien-quan-benh-vien-k-4274632.html"
-                                title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K>" data-medium="Item-4"
-                                data-thumb="1"
-                                data-itm-source="#vn_source=Home&amp;vn_campaign=ThuongVien&amp;vn_medium=Item-4&amp;vn_term=Desktop&amp;vn_thumb=1"
-                                data-itm-added="1">Sở Y tế Hải Phòng, Nam Định, Quảng Ninh, sáng 8/5 đều thông báo ghi
+                                title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K>" data-medium="Item-4">Sở Y
+                                tế Hải Phòng, Nam Định, Quảng Ninh, sáng 8/5 đều thông báo ghi
                                 nhận mỗi nơi một ca dương tính mới liên quan Bệnh viện K Tân Triều ở Hà Nội.</a>
                         </p>
                     </div>
@@ -432,23 +448,16 @@
                 <article class="item-news item-news-common">
                     <h3 class="title-news">
                         <a href="https://vnexpress.net/3-tinh-them-3-ca-nghi-covid-19-lien-quan-benh-vien-k-4274632.html"
-                            title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K" data-medium="Item-4"
-                            data-thumb="1"
-                            data-itm-source="#vn_source=Home&amp;vn_campaign=ThuongVien&amp;vn_medium=Item-4&amp;vn_term=Desktop&amp;vn_thumb=1"
-                            data-itm-added="1">3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K</a>
+                            title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K" data-medium="Item-4">3 tỉnh
+                            thêm 3 ca nghi Covid-19 liên quan Bệnh viện K</a>
 
                     </h3>
                     <div class="thumb-art">
                         <a href="https://vnexpress.net/3-tinh-them-3-ca-nghi-covid-19-lien-quan-benh-vien-k-4274632.html"
-                            class="thumb thumb-5x3" title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K"
-                            data-medium="Item-4" data-thumb="1"
-                            data-itm-source="#vn_source=Home&amp;vn_campaign=ThuongVien&amp;vn_medium=Item-4&amp;vn_term=Desktop&amp;vn_thumb=1"
-                            data-itm-added="1">
+                            class="thumb thumb-5x3" title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K">
                             <picture>
-                                <!--[if IE 9]><video style="display: none;"><![endif]-->
                                 <source
                                     srcset="https://i1-vnexpress.vnecdn.net/2021/05/07/MinhCng-1620406662-3712-1620406780.jpg?w=220&amp;h=132&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=LOMt3UjQ4tPpbVQKBhBhtg 1x, https://i1-vnexpress.vnecdn.net/2021/05/07/MinhCng-1620406662-3712-1620406780.jpg?w=220&amp;h=132&amp;q=100&amp;dpr=2&amp;fit=crop&amp;s=-30VjsO3IWKV6KMvIQvNOw 2x">
-                                <!--[if IE 9]></video><![endif]-->
                                 <img itemprop="contentUrl" loading="lazy" intrinsicsize="680x408"
                                     alt="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K" class="lazy loading"
                                     src="https://i1-vnexpress.vnecdn.net/2021/05/07/MinhCng-1620406662-3712-1620406780.jpg?w=120&amp;h=72&amp;q=100&amp;dpr=2&amp;fit=crop&amp;s=3QTCTjCLy0o72TqeqQBq8A"
@@ -456,10 +465,8 @@
                         </a>
                         <p class="description"><a
                                 href="https://vnexpress.net/3-tinh-them-3-ca-nghi-covid-19-lien-quan-benh-vien-k-4274632.html"
-                                title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K>" data-medium="Item-4"
-                                data-thumb="1"
-                                data-itm-source="#vn_source=Home&amp;vn_campaign=ThuongVien&amp;vn_medium=Item-4&amp;vn_term=Desktop&amp;vn_thumb=1"
-                                data-itm-added="1">Sở Y tế Hải Phòng, Nam Định, Quảng Ninh, sáng 8/5 đều thông báo ghi
+                                title="3 tỉnh thêm 3 ca nghi Covid-19 liên quan Bệnh viện K>" data-medium="Item-4">Sở Y
+                                tế Hải Phòng, Nam Định, Quảng Ninh, sáng 8/5 đều thông báo ghi
                                 nhận mỗi nơi một ca dương tính mới liên quan Bệnh viện K Tân Triều ở Hà Nội.</a>
                         </p>
                     </div>
@@ -540,136 +547,136 @@
                             </div>
                         </div>
 
-                         <div class="wrap-slide-cv">
-                        <div class="textlink-to-page flexbox">
-                            <a href="https://vnexpress.net/covid-19/covid-19-viet-nam" class="flexbox"
-                                title="Số liệu Covid-19"><span class="ico-cv ico-tracking">
-                                    
-                                </span><span
-                                    class="txt-cv">Số liệu Covid-19</span></a>
-                                    <a href="https://vnexpress.net/covid-19/tin-tuc" class="flexbox"
-                                        title="Tin tức cập nhật"><span class="ico-cv ico-news"></span><span
-                                            class="txt-cv">Tin tức cập nhật</span></a>
+                        <div class="wrap-slide-cv">
+                            <div class="textlink-to-page flexbox">
+                                <a href="https://vnexpress.net/covid-19/covid-19-viet-nam" class="flexbox"
+                                    title="Số liệu Covid-19"><span class="ico-cv ico-tracking">
 
-                        </div>
-                        <div class="table-cv">
-                            <table class="tbl-cv" cellspacing="0" cellpadding="0">
-                                <thead>
-                                    <tr>
-                                        <th class="col-prov">Tỉnh</th>
-                                        <th class="col-today">Hôm nay</th>
-                                        <th class="col-all">Tổng</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                            <div class="width_common wrap-scroll-tb scrollbar-inner ss-container" style="height: 70px;">
-                                <div class="ss-wrapper">
-                                    <div class="ss-content">
-                                        <table class="tbl-cv tbl-sort" cellspacing="0" cellpadding="0">
+                                    </span><span class="txt-cv">Số liệu Covid-19</span></a>
+                                <a href="https://vnexpress.net/covid-19/tin-tuc" class="flexbox"
+                                    title="Tin tức cập nhật"><span class="ico-cv ico-news"></span><span
+                                        class="txt-cv">Tin tức cập nhật</span></a>
 
-                                
-                                            <tr data-score="140026">
-                                                <td class="col-prov">Bắc Ninh</td>
-                                                <td class="col-today number-up">+14</td>
-                                                <td class="col-all"><strong>26</strong></td>
-                                            </tr>
-                                            <tr data-score="10072">
-                                                <td class="col-prov">Hà Nội</td>
-                                                <td class="col-today number-up">+1</td>
-                                                <td class="col-all"><strong>72</strong></td>
-                                            </tr>
-                                            <tr data-score="26">
-                                                <td class="col-prov">Vĩnh Phúc</td>
-                                                <td class="col-today number-up">-</td>
-                                                <td class="col-all"><strong>26</strong></td>
-                                            </tr>
-                                            <tr data-score="15">
-                                                <td class="col-prov">Hà Nam</td>
-                                                <td class="col-today number-up">-</td>
-                                                <td class="col-all"><strong>15</strong></td>
-                                            </tr>
-                                            <tr data-score="10">
-                                                <td class="col-prov">Đà Nẵng</td>
-                                                <td class="col-today number-up">-</td>
-                                                <td class="col-all"><strong>10</strong></td>
-                                            </tr>
-                                            <tr data-score="8">
-                                                <td class="col-prov">Hưng Yên</td>
-                                                <td class="col-today number-up">-</td>
-                                                <td class="col-all"><strong>8</strong></td>
-                                            </tr>
-                                            <tr data-score="5">
-                                                <td class="col-prov">Thái Bình</td>
-                                                <td class="col-today number-up">-</td>
-                                                <td class="col-all"><strong>5</strong></td>
-                                            </tr>
-                                            <tr data-score="3">
-                                                <td class="col-prov">Hải Dương</td>
-                                                <td class="col-today number-up">-</td>
-                                                <td class="col-all"><strong>3</strong></td>
-                                            </tr>
-                                            <tr data-score="1">
-                                                <td class="col-prov">TP HCM</td>
-                                                <td class="col-today number-up">-</td>
-                                                <td class="col-all"><strong>1</strong></td>
-                                            </tr>
-                                            <tr data-score="1">
-                                                <td class="col-prov">Yên Bái</td>
-                                                <td class="col-today number-up">-</td>
-                                                <td class="col-all"><strong>1</strong></td>
-                                            </tr>
-                                            <tr data-score="1">
-                                                <td class="col-prov">Quảng Nam</td>
-                                                <td class="col-today number-up">-</td>
-                                                <td class="col-all"><strong>1</strong></td>
-                                            </tr>
-                                            <tr data-score="1">
-                                                <td class="col-prov">Đồng Nai</td>
-                                                <td class="col-today number-up">-</td>
-                                                <td class="col-all"><strong>1</strong></td>
-                                            </tr>
-                                            <tr data-score="1">
-                                                <td class="col-prov">Quảng Ngãi</td>
-                                                <td class="col-today number-up">-</td>
-                                                <td class="col-all"><strong>1</strong></td>
-                                            </tr>
-                                            <tr data-score="1">
-                                                <td class="col-prov">Lạng Sơn</td>
-                                                <td class="col-today number-up">-</td>
-                                                <td class="col-all"><strong>1</strong></td>
-                                            </tr>
-                                            <tr data-score="1">
-                                                <td class="col-prov">Thanh Hóa</td>
-                                                <td class="col-today number-up">-</td>
-                                                <td class="col-all"><strong>1</strong></td>
-                                            </tr>
-                                            <tr data-score="1">
-                                                <td class="col-prov">Điện Biên</td>
-                                                <td class="col-today number-up">-</td>
-                                                <td class="col-all"><strong>1</strong></td>
-                                            </tr>
-                                            <tr data-score="1">
-                                                <td class="col-prov">Nghệ An</td>
-                                                <td class="col-today number-up">-</td>
-                                                <td class="col-all"><strong>1</strong></td>
-                                            </tr>
-                                            <tr data-score="1">
-                                                <td class="col-prov">Nam Định</td>
-                                                <td class="col-today number-up">-</td>
-                                                <td class="col-all"><strong>1</strong></td>
-                                            </tr>
-                                            <tr data-score="1">
-                                                <td class="col-prov">Phú Thọ</td>
-                                                <td class="col-today number-up">-</td>
-                                                <td class="col-all"><strong>1</strong></td>
-                                            </tr>
-                                        </table>
+                            </div>
+                            <div class="table-cv">
+                                <table class="tbl-cv" cellspacing="0" cellpadding="0">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-prov">Tỉnh</th>
+                                            <th class="col-today">Hôm nay</th>
+                                            <th class="col-all">Tổng</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <div class="width_common wrap-scroll-tb scrollbar-inner ss-container"
+                                    style="height: 70px;">
+                                    <div class="ss-wrapper">
+                                        <div class="ss-content">
+                                            <table class="tbl-cv tbl-sort" cellspacing="0" cellpadding="0">
+
+
+                                                <tr data-score="140026">
+                                                    <td class="col-prov">Bắc Ninh</td>
+                                                    <td class="col-today number-up">+14</td>
+                                                    <td class="col-all"><strong>26</strong></td>
+                                                </tr>
+                                                <tr data-score="10072">
+                                                    <td class="col-prov">Hà Nội</td>
+                                                    <td class="col-today number-up">+1</td>
+                                                    <td class="col-all"><strong>72</strong></td>
+                                                </tr>
+                                                <tr data-score="26">
+                                                    <td class="col-prov">Vĩnh Phúc</td>
+                                                    <td class="col-today number-up">-</td>
+                                                    <td class="col-all"><strong>26</strong></td>
+                                                </tr>
+                                                <tr data-score="15">
+                                                    <td class="col-prov">Hà Nam</td>
+                                                    <td class="col-today number-up">-</td>
+                                                    <td class="col-all"><strong>15</strong></td>
+                                                </tr>
+                                                <tr data-score="10">
+                                                    <td class="col-prov">Đà Nẵng</td>
+                                                    <td class="col-today number-up">-</td>
+                                                    <td class="col-all"><strong>10</strong></td>
+                                                </tr>
+                                                <tr data-score="8">
+                                                    <td class="col-prov">Hưng Yên</td>
+                                                    <td class="col-today number-up">-</td>
+                                                    <td class="col-all"><strong>8</strong></td>
+                                                </tr>
+                                                <tr data-score="5">
+                                                    <td class="col-prov">Thái Bình</td>
+                                                    <td class="col-today number-up">-</td>
+                                                    <td class="col-all"><strong>5</strong></td>
+                                                </tr>
+                                                <tr data-score="3">
+                                                    <td class="col-prov">Hải Dương</td>
+                                                    <td class="col-today number-up">-</td>
+                                                    <td class="col-all"><strong>3</strong></td>
+                                                </tr>
+                                                <tr data-score="1">
+                                                    <td class="col-prov">TP HCM</td>
+                                                    <td class="col-today number-up">-</td>
+                                                    <td class="col-all"><strong>1</strong></td>
+                                                </tr>
+                                                <tr data-score="1">
+                                                    <td class="col-prov">Yên Bái</td>
+                                                    <td class="col-today number-up">-</td>
+                                                    <td class="col-all"><strong>1</strong></td>
+                                                </tr>
+                                                <tr data-score="1">
+                                                    <td class="col-prov">Quảng Nam</td>
+                                                    <td class="col-today number-up">-</td>
+                                                    <td class="col-all"><strong>1</strong></td>
+                                                </tr>
+                                                <tr data-score="1">
+                                                    <td class="col-prov">Đồng Nai</td>
+                                                    <td class="col-today number-up">-</td>
+                                                    <td class="col-all"><strong>1</strong></td>
+                                                </tr>
+                                                <tr data-score="1">
+                                                    <td class="col-prov">Quảng Ngãi</td>
+                                                    <td class="col-today number-up">-</td>
+                                                    <td class="col-all"><strong>1</strong></td>
+                                                </tr>
+                                                <tr data-score="1">
+                                                    <td class="col-prov">Lạng Sơn</td>
+                                                    <td class="col-today number-up">-</td>
+                                                    <td class="col-all"><strong>1</strong></td>
+                                                </tr>
+                                                <tr data-score="1">
+                                                    <td class="col-prov">Thanh Hóa</td>
+                                                    <td class="col-today number-up">-</td>
+                                                    <td class="col-all"><strong>1</strong></td>
+                                                </tr>
+                                                <tr data-score="1">
+                                                    <td class="col-prov">Điện Biên</td>
+                                                    <td class="col-today number-up">-</td>
+                                                    <td class="col-all"><strong>1</strong></td>
+                                                </tr>
+                                                <tr data-score="1">
+                                                    <td class="col-prov">Nghệ An</td>
+                                                    <td class="col-today number-up">-</td>
+                                                    <td class="col-all"><strong>1</strong></td>
+                                                </tr>
+                                                <tr data-score="1">
+                                                    <td class="col-prov">Nam Định</td>
+                                                    <td class="col-today number-up">-</td>
+                                                    <td class="col-all"><strong>1</strong></td>
+                                                </tr>
+                                                <tr data-score="1">
+                                                    <td class="col-prov">Phú Thọ</td>
+                                                    <td class="col-today number-up">-</td>
+                                                    <td class="col-all"><strong>1</strong></td>
+                                                </tr>
+                                            </table>
+                                        </div>
                                     </div>
+                                    <div class="ss-scroll ss-hidden"></div>
                                 </div>
-                                <div class="ss-scroll ss-hidden"></div>
                             </div>
                         </div>
-                    </div>
 
                     </div>
 
@@ -678,27 +685,18 @@
 
                 <div class="box-category box-cate-featured box-cate-featured-v2 has-border">
                     <hgroup class="width_common title-box-category kinhdoanh">
-                        <h2 class="parent-cate"><a href="/kinh-doanh"
-                                data-itm-source="#vn_source=Home&amp;vn_campaign=Box-KinhDoanh&amp;vn_medium=Title-KinhDoanh&amp;vn_term=Desktop"
-                                class="inner-title" title="Kinh doanh" data-itm-added="1">Kinh doanh</a></h2><span
-                            class="sub-cate"><a href="/kinh-doanh/quoc-te"
-                                data-itm-source="#vn_source=Home&amp;vn_campaign=Box-KinhDoanh&amp;vn_medium=Title-QuocTe&amp;vn_term=Desktop"
-                                title="Quốc tế" data-itm-added="1">Quốc tế</a></span><span class="sub-cate"><a
-                                href="/kinh-doanh/doanh-nghiep"
-                                data-itm-source="#vn_source=Home&amp;vn_campaign=Box-KinhDoanh&amp;vn_medium=Title-DoanhNghiep&amp;vn_term=Desktop"
-                                title="Doanh nghiệp" data-itm-added="1">Doanh nghiệp</a></span><span class="sub-cate"><a
-                                href="/kinh-doanh/chung-khoan"
-                                data-itm-source="#vn_source=Home&amp;vn_campaign=Box-KinhDoanh&amp;vn_medium=Title-ChungKhoan&amp;vn_term=Desktop"
-                                title="Chứng khoán" data-itm-added="1">Chứng khoán</a></span><span class="sub-cate"><a
-                                href="/kinh-doanh/bat-dong-san"
-                                data-itm-source="#vn_source=Home&amp;vn_campaign=Box-KinhDoanh&amp;vn_medium=Title-BatDongSan&amp;vn_term=Desktop"
+                        <h2 class="parent-cate"><a href="/kinh-doanh" class="inner-title" title="Kinh doanh"
+                                data-itm-added="1">Kinh doanh</a></h2><span class="sub-cate"><a
+                                href="/kinh-doanh/quoc-te" title="Quốc tế" data-itm-added="1">Quốc tế</a></span><span
+                            class="sub-cate"><a href="/kinh-doanh/doanh-nghiep" title="Doanh nghiệp"
+                                data-itm-added="1">Doanh nghiệp</a></span><span class="sub-cate"><a
+                                href="/kinh-doanh/chung-khoan" title="Chứng khoán" data-itm-added="1">Chứng
+                                khoán</a></span><span class="sub-cate"><a href="/kinh-doanh/bat-dong-san"
                                 title="Bất động sản" data-itm-added="1">Bất động sản</a></span><span class="sub-cate"><a
-                                href="https://startup.vnexpress.net/"
-                                data-itm-source="#vn_source=Home&amp;vn_campaign=Box-KinhDoanh&amp;vn_medium=Title-Startup&amp;vn_term=Desktop"
-                                title="Startup" data-itm-added="1">Startup</a></span>
-                        <span class="sub-cate"><a href="/kinh-doanh/bao-hiem"
-                                data-itm-source="#vn_source=Home&amp;vn_campaign=Box-KinhDoanh&amp;vn_medium=Title-BaoHiem&amp;vn_term=Desktop"
-                                title="Bảo hiểm" data-itm-added="1">Bảo hiểm</a></span>
+                                href="https://startup.vnexpress.net/" title="Startup"
+                                data-itm-added="1">Startup</a></span>
+                        <span class="sub-cate"><a href="/kinh-doanh/bao-hiem" title="Bảo hiểm" data-itm-added="1">Bảo
+                                hiểm</a></span>
                         <span style="margin-left:15px;" class="sub-cate"><a
                                 href="https://vhome.vnexpress.net?utm_source=VnExpress_Desktop&amp;utm_medium=Home_Menu&amp;utm_campaign=HaVien_KinhDoanh"
                                 title="Vhome">Vhome</a></span>
@@ -708,22 +706,17 @@
                         <article class="item-news full-thumb flexbox" id="item-news full-thumb flexbox">
                             <div class="_thumb-art">
                                 <a href="https://vnexpress.net/mot-tram-xang-bi-dung-ban-vi-dau-diesel-kem-chat-luong-4274864.html"
-                                    data-itm-source="#vn_source=Home&amp;vn_campaign=Box-KinhDoanh&amp;vn_medium=Item-1&amp;vn_term=Desktop&amp;vn_thumb=1"
                                     class="_thumb thumbone"
                                     title="Một trạm xăng bị dừng bán vì dầu diesel kém chất lượng" data-itm-added="1">
 
                                     <picture>
-                                        <!--[if IE 9]><video style="display: none;"><![endif]-->
                                         <source
-                                            data-srcset="https://i1-kinhdoanh.vnecdn.net/2021/05/08/xangdau29-1620459279-3216-1620459444.jpg?w=380&amp;h=228&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=pUJrSsi6TdX3OLo7lD_eWg 1x, https://i1-kinhdoanh.vnecdn.net/2021/05/08/xangdau29-1620459279-3216-1620459444.jpg?w=380&amp;h=228&amp;q=100&amp;dpr=2&amp;fit=crop&amp;s=LE7--RNOojL3TInDWMYbrQ 2x"
                                             srcset="https://i1-kinhdoanh.vnecdn.net/2021/05/08/xangdau29-1620459279-3216-1620459444.jpg?w=380&amp;h=228&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=pUJrSsi6TdX3OLo7lD_eWg 1x, https://i1-kinhdoanh.vnecdn.net/2021/05/08/xangdau29-1620459279-3216-1620459444.jpg?w=380&amp;h=228&amp;q=100&amp;dpr=2&amp;fit=crop&amp;s=LE7--RNOojL3TInDWMYbrQ 2x">
                                         <!--[if IE 9]></video><![endif]-->
                                         <img loading="lazy" intrinsicsize="380x228"
                                             alt="Một trạm xăng bị dừng bán vì dầu diesel kém chất lượng"
                                             class="lazy lazied"
-                                            src="https://i1-kinhdoanh.vnecdn.net/2021/05/08/xangdau29-1620459279-3216-1620459444.jpg?w=380&amp;h=228&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=pUJrSsi6TdX3OLo7lD_eWg"
-                                            data-src="https://i1-kinhdoanh.vnecdn.net/2021/05/08/xangdau29-1620459279-3216-1620459444.jpg?w=380&amp;h=228&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=pUJrSsi6TdX3OLo7lD_eWg"
-                                            data-ll-status="loaded">
+                                            src="https://i1-kinhdoanh.vnecdn.net/2021/05/08/xangdau29-1620459279-3216-1620459444.jpg?w=380&amp;h=228&amp;q=100&amp;dpr=1&amp;fit=crop&amp;s=pUJrSsi6TdX3OLo7lD_eWg">
                                     </picture>
 
                                 </a>
@@ -756,12 +749,10 @@
                         </article>
                         <article class="item-news article-sub-right">
                             <h3 class="title-news"><a
-                                    href="https://vnexpress.net/giay-ve-sinh-ngay-cang-dat-do-4274855.html"
-                                    data-itm-source="#vn_source=Home&amp;vn_campaign=Box-KinhDoanh&amp;vn_medium=Item-2&amp;vn_term=Desktop&amp;vn_thumb=0"
-                                    data-itm-added="1">Giấy vệ sinh ngày càng đắt đỏ</a></h3>
+                                    href="https://vnexpress.net/giay-ve-sinh-ngay-cang-dat-do-4274855.html">Giấy vệ sinh
+                                    ngày càng đắt đỏ</a></h3>
                             <p class="description">
                                 <a href="https://vnexpress.net/giay-ve-sinh-ngay-cang-dat-do-4274855.html"
-                                    data-itm-source="#vn_source=Home&amp;vn_campaign=Box-KinhDoanh&amp;vn_medium=Item-2&amp;vn_term=Desktop&amp;vn_thumb=0"
                                     title="Giấy vệ sinh ngày càng đắt đỏ" data-itm-added="1">
                                     <span class="location-stamp">Mỹ</span>Giấy vệ sinh, một trong những mục tiêu càn
                                     quét của người tiêu dùng mỗi lần dịch bùng lên, đang đắt hơn vì giá nguyên liệu tăng
@@ -785,8 +776,8 @@
                                 <h3 class="title-news"><a
                                         href="https://vnexpress.net/gia-nha-hang-sang-tham-quyen-tang-nhanh-nhat-the-gioi-4274435.html"
                                         data-itm-source="#vn_source=Home&amp;vn_campaign=Box-KinhDoanh&amp;vn_medium=Item-3&amp;vn_term=Desktop&amp;vn_thumb=0"
-                                        title="Giá nhà hạng sang Thâm Quyến tăng nhanh nhất thế giới"
-                                        data-itm-added="1">Giá nhà hạng sang Thâm Quyến tăng nhanh nhất thế
+                                        title="Giá nhà hạng sang Thâm Quyến tăng nhanh nhất thế giới">Giá nhà hạng sang
+                                        Thâm Quyến tăng nhanh nhất thế
                                         giới</a><span class="meta-news">
                                         <a class="count_cmt"
                                             href="https://vnexpress.net/gia-nha-hang-sang-tham-quyen-tang-nhanh-nhat-the-gioi-4274435.html#box_comment_vne"
@@ -801,7 +792,6 @@
                             <article class="item-news">
                                 <h3 class="title-news"><a
                                         href="https://vnexpress.net/go-duc-thanh-7-nam-lien-tuc-chia-co-tuc-tren-50-4274846.html"
-                                        data-itm-source="#vn_source=Home&amp;vn_campaign=Box-KinhDoanh&amp;vn_medium=Item-4&amp;vn_term=Desktop&amp;vn_thumb=0"
                                         title="Gỗ Đức Thành 7 năm liên tục chia cổ tức trên 50%" data-itm-added="1">Gỗ
                                         Đức Thành 7 năm liên tục chia cổ tức trên 50%</a><span class="meta-news">
                                         <a class="count_cmt"
@@ -817,7 +807,6 @@
                             <article class="item-news">
                                 <h3 class="title-news"><a
                                         href="https://vnexpress.net/gia-quang-sat-lap-ky-luc-nho-nhu-cau-tai-trung-quoc-4274805.html"
-                                        data-itm-source="#vn_source=Home&amp;vn_campaign=Box-KinhDoanh&amp;vn_medium=Item-5&amp;vn_term=Desktop&amp;vn_thumb=0"
                                         title="Giá quặng sắt lập kỷ lục nhờ nhu cầu tại Trung Quốc"
                                         data-itm-added="1">Giá quặng sắt lập kỷ lục nhờ nhu cầu tại Trung Quốc</a><span
                                         class="meta-news">
@@ -848,80 +837,43 @@
         <div class="inner-footer">
             <ul class="list-menu-footer">
 
-                <li class="item-menu"><a href="https://vnexpress.net/" title="Trang chủ" data-medium="Menu-Home"
-                        onclick="trackingLogoHome('logo-footer-menu', this.href)"
-                        data-itm-source="#vn_source=Folder&amp;vn_campaign=Footer&amp;vn_medium=Menu-Home&amp;vn_term=Desktop"
-                        data-itm-added="1">Trang chủ</a></li>
-                <li class="item-menu"><a href="https://video.vnexpress.net" data-medium="Menu-Video" title="Video"
-                        data-itm-source="#vn_source=Folder&amp;vn_campaign=Footer&amp;vn_medium=Menu-Video&amp;vn_term=Desktop"
-                        data-itm-added="1">Video</a></li>
-                <li class="item-menu"><a href="https://vnexpress.net/infographics" data-medium="Menu-Infographics"
-                        title="Infographics"
-                        data-itm-source="#vn_source=Folder&amp;vn_campaign=Footer&amp;vn_medium=Menu-Infographics&amp;vn_term=Desktop"
-                        data-itm-added="1">Infographics</a></li>
-                <li class="item-menu border-top" style="padding-top: 15px;border-top: 1px solid #e5e5e5;"><a
-                        href="https://vnexpress.net/tin-tuc-24h" data-medium="Menu-MoiNhat" title="Mới nhất"
-                        data-itm-source="#vn_source=Folder&amp;vn_campaign=Footer&amp;vn_medium=Menu-MoiNhat&amp;vn_term=Desktop"
-                        data-itm-added="1">Mới nhất</a></li>
-                <li class="item-menu"><a href="https://vnexpress.net/tin-xem-nhieu" data-medium="Menu-XemNhieu"
-                        title="Xem nhiều"
-                        data-itm-source="#vn_source=Folder&amp;vn_campaign=Footer&amp;vn_medium=Menu-XemNhieu&amp;vn_term=Desktop"
-                        data-itm-added="1">Xem nhiều</a></li>
-                <li class="item-menu"><a href="https://vnexpress.net/anh" data-medium="Menu-Anh" title="Ảnh"
-                        data-itm-source="#vn_source=Folder&amp;vn_campaign=Footer&amp;vn_medium=Menu-Anh&amp;vn_term=Desktop"
-                        data-itm-added="1">Ảnh</a></li>
-                <li class="item-menu"><a href="https://vnexpress.net/tin-nong" data-medium="Menu-TinNong"
-                        title="Tin nóng"
-                        data-itm-source="#vn_source=Folder&amp;vn_campaign=Footer&amp;vn_medium=Menu-TinNong&amp;vn_term=Desktop"
-                        data-itm-added="1">Tin nóng</a></li>
-            </ul>
-            <ul class="list-menu-footer">
-                <li class="item-menu"><a href="https://vnexpress.net/thoi-su" data-medium="Menu-ThoiSu" title="Thời sự"
-                        data-itm-source="#vn_source=Folder&amp;vn_campaign=Footer&amp;vn_medium=Menu-ThoiSu&amp;vn_term=Desktop"
-                        data-itm-added="1">Thời sự</a></li>
-                <li class="item-menu"><a href="https://vnexpress.net/goc-nhin" data-medium="Menu-GocNhin"
-                        title="Góc nhìn"
-                        data-itm-source="#vn_source=Folder&amp;vn_campaign=Footer&amp;vn_medium=Menu-GocNhin&amp;vn_term=Desktop"
-                        data-itm-added="1">Góc nhìn</a></li>
-                <li class="item-menu"><a href="https://vnexpress.net/the-gioi" data-medium="Menu-TheGioi"
-                        title="Thế giới"
-                        data-itm-source="#vn_source=Folder&amp;vn_campaign=Footer&amp;vn_medium=Menu-TheGioi&amp;vn_term=Desktop"
-                        data-itm-added="1">Thế giới</a></li>
-                <li class="item-menu"><a href="https://vnexpress.net/kinh-doanh" data-medium="Menu-KinhDoanh"
-                        title="Kinh doanh"
-                        data-itm-source="#vn_source=Folder&amp;vn_campaign=Footer&amp;vn_medium=Menu-KinhDoanh&amp;vn_term=Desktop"
-                        data-itm-added="1">Kinh doanh</a></li>
-                <li class="item-menu"><a href="https://vnexpress.net/giai-tri" data-medium="Menu-GiaiTri"
-                        title="Giải trí"
-                        data-itm-source="#vn_source=Folder&amp;vn_campaign=Footer&amp;vn_medium=Menu-GiaiTri&amp;vn_term=Desktop"
-                        data-itm-added="1">Giải trí</a></li>
-            </ul>
-            <ul class="list-menu-footer">
-                <li class="item-menu"><a href="https://vnexpress.net/the-thao" data-medium="Menu-TheThao"
-                        title="Thể thao">Thể thao</a></li>
-                <li class="item-menu"><a href="https://vnexpress.net/phap-luat" data-medium="Menu-PhapLuat"
-                        title="Pháp luật">Pháp luật</a></li>
-                <li class="item-menu"><a href="https://vnexpress.net/giao-duc" data-medium="Menu-GiaoDuc"
-                        title="Giáo dục">Giáo dục</a></li>
-                <li class="item-menu"><a href="https://vnexpress.net/suc-khoe" data-medium="Menu-SucKhoe"
-                        title="Sức khỏe">Sức khỏe</a></li>
-                <li class="item-menu"><a href="https://vnexpress.net/doi-song" data-medium="Menu-DoiSong"
-                        title="Đời sống">Đời sống</a></li>
-                <li class="item-menu"><a href="https://vnexpress.net/du-lich" data-medium="Menu-DuLich"
-                        title="Du lịch">Du lịch</a></li>
-            </ul>
-            <ul class="list-menu-footer">
-                <li class="item-menu"><a href="https://vnexpress.net/khoa-hoc" data-medium="Menu-KhoaHoc"
-                        title="Khoa học">Khoa học</a></li>
-                <li class="item-menu"><a href="https://vnexpress.net/so-hoa" data-medium="Menu-SoHoa" title="Số hóa">Số
-                        hóa</a></li>
-                <li class="item-menu"><a href="https://vnexpress.net/oto-xe-may" data-medium="Menu-Xe" title="Xe">Xe</a>
+                <li class="item-menu"><a href="https://vnexpress.net/" title="Trang chủ" f
+                        onclick="trackingLogoHome('logo-footer-menu', this.href)">Trang chủ</a></li>
+                <li class="item-menu"><a href="https://video.vnexpress.net" title="Video">Video</a></li>
+                <li class="item-menu"><a href="https://vnexpress.net/infographics" title="Infographics">Infographics</a>
                 </li>
-                <li class="item-menu"><a href="https://vnexpress.net/y-kien" data-medium="Menu-YKien" title="Ý kiến">Ý
+                <li class="item-menu border-top" style="padding-top: 15px;border-top: 1px solid #e5e5e5;"><a
+                        href="https://vnexpress.net/tin-tuc-24h" title="Mới nhất">Mới nhất</a></li>
+                <li class="item-menu"><a href="https://vnexpress.net/tin-xem-nhieu" title="Xem nhiều">Xem nhiều</a></li>
+                <li class="item-menu"><a href="https://vnexpress.net/anh">Ảnh</a></li>
+                <li class="item-menu"><a href="https://vnexpress.net/tin-nong" title="Tin nóng">Tin nóng</a></li>
+            </ul>
+            <ul class="list-menu-footer">
+                <li class="item-menu"><a href="https://vnexpress.net/thoi-su" title="Thời sự">Thời sự</a></li>
+                <li class="item-menu"><a href="https://vnexpress.net/goc-nhin" title="Góc nhìn">Góc nhìn</a></li>
+                <li class="item-menu"><a href="https://vnexpress.net/the-gioi" title="Thế giới">Thế giới</a></li>
+                <li class="item-menu"><a href="https://vnexpress.net/kinh-doanh" title="Kinh doanh">Kinh doanh</a></li>
+                <li class="item-menu"><a href="https://vnexpress.net/giai-tri" title="Giải trí">Giải trí</a></li>
+            </ul>
+            <ul class="list-menu-footer">
+                <li class="item-menu"><a href="https://vnexpress.net/the-thao" title="Thể thao">Thể thao</a></li>
+                <li class="item-menu"><a href="https://vnexpress.net/phap-luat" title="Pháp luật">Pháp luật</a></li>
+                <li class="item-menu"><a href="https://vnexpress.net/giao-duc" title="Giáo dục">Giáo dục</a></li>
+                <li class="item-menu"><a href="https://vnexpress.net/suc-khoe" title="Sức khỏe">Sức khỏe</a></li>
+                <li class="item-menu"><a href="https://vnexpress.net/doi-song" title="Đời sống">Đời sống</a></li>
+                <li class="item-menu"><a href="https://vnexpress.net/du-lich" title="Du lịch">Du lịch</a></li>
+            </ul>
+            <ul class="list-menu-footer">
+                <li class="item-menu"><a href="https://vnexpress.net/khoa-hoc" title="Khoa học">Khoa học</a></li>
+                <li class="item-menu"><a href="https://vnexpress.net/so-hoa" title="Số hóa">Số
+                        hóa</a></li>
+                <li class="item-menu"><a href="https://vnexpress.net/oto-xe-may" title="Xe">Xe</a>
+                </li>
+                <li class="item-menu"><a href="https://vnexpress.net/y-kien" title="Ý kiến">Ý
                         kiến</a></li>
-                <li class="item-menu"><a href="https://vnexpress.net/tam-su" data-medium="Menu-TamSu" title="Tâm sự">Tâm
+                <li class="item-menu"><a href="https://vnexpress.net/tam-su" title="Tâm sự">Tâm
                         sự</a></li>
-                <li class="item-menu"><a href="https://vnexpress.net/hai" data-medium="Menu-Hai" title="Hài">Hài</a>
+                <li class="item-menu"><a href="https://vnexpress.net/hai" title="Hài">Hài</a>
                 </li>
             </ul>
             <ul class="list-menu-footer">

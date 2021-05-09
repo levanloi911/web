@@ -7,74 +7,158 @@ body {
 }
 
 .top-header {
-    padding: 8.5px ;
-    border-bottom: 1px solid #E5E5E5;
+    padding: 8.5px 0 8.5px 0px;
+   
+    border-bottom: 1px solid #e5e5e5;
 }
-
+.section {
+    width: 100%;
+    float: left;
+}
 .container {
     width: 100%;
     max-width: 1130px;
-    padding: 0 15px;
-    margin: 0 auto;
+    padding: 0 15px 0px 15px;
+   
+    margin: 0 auto 0px auto;
+    
     position: relative;
 }
-
+.all-menu-tablet {
+    float: left;
+    width: 50px;
+    height: 33px;
+    text-align: center;
+    margin-left: -15px;
+    margin-top: -2px;
+    cursor: pointer;
+    display: none;
+}
+.logo {
+    display: inline-block;
+    float: left;
+    padding-top: 2px;
+}
 .time-now {
     font-size: 14px;
     line-height: 32px;
-    color: aquamarine;
+    color: #757575;
+    position: relative;
     margin-left: 20px;
-    padding: 10px;
+    padding-left: 15px;
+    float: left;
 }
-.right{
-    height: 20px;
-    float: right!important;
+.time-now:before {
+    content: '';
+    width: 1px;
+    height: 26px;
+    background: #e5e5e5;
+    position: absolute;
+    left: 0;
+    top: 2px;
 }
-
-.btn24hnew, .evne {
-    height: 20px;
+.btn24hqua,
+.evne {
+    height: 32px;
     line-height: 30px;
-    padding: 10px;
-    padding-bottom: 10px;
-    border: 1px solid thistle;
+    padding: 0 10px 0 10px;
+    border: 1px solid #e5e5e5;
     border-radius: 3px;
     font-size: 14px;
-    color: rgb(39, 37, 37);
+    color: #757575;
     display: inline-block;
-    text-decoration: none;
 }
-.top-header .search-vne{
-    height: 20px;
+.btn24hqua .ic {
+    fill: #bdbdbd;
+}
+.right {
+    float: right !important;
+}
+.icon_thumb_videophoto,
+.main-nav .parent,
+.wrap-all-menu .container,
+.top-header .right {
+    display: flex;
+}
+.btn24hqua,
+.evne {
+    height: 32px;
     line-height: 30px;
+    padding: 0 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #757575;
+    display: inline-block;
+}
+.btn24hqua .ic,
+.evne .ic {
+    margin-right: 5px;
+    margin-top: -1px;
+}
+.ic {
+    width: 16px;
+    height: 16px;
+    fill: #757575;
+    display: inline-block;
+    vertical-align: middle;
+}
+.evne {
+    margin-left: 15px;
+}
+
+
+.top-header .search {
     position: relative;
     margin-left: 15px;
     padding-left: 15px;
-    display: inline-block;
 }
-.top-header .search-vne input {
+.top-header .search:before {
+    content: '';
+    width: 1px;
+    height: 24px;
+    background: #e5e5e5;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.top-header .search input {
     height: 32px;
     line-height: 32px;
     border-radius: 16px;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     padding: 0 30px 0 14px;
     margin: 0;
-    display: inline-block;
 }
-.top-header .search-vne button {
+.top-header .search button {
     background: none;
     position: absolute;
     right: 0;
     top: 0;
     width: 32px;
-    display: inline-block;
     height: 32px;
 }
-.log_txt{
-    display: inline-block;
-    text-decoration: none;
-    margin-left: 15px;
-    color: #000;
-    
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.top-header .search button .ic {
+    fill: #bdbdbd;
+}
+.myvne_taskbar {
+    margin-left: 20px;
+}
+.myvne_taskbar .log_txt {
+    height: 32px;
+    line-height: 32px;
+    color: #4f4f4f;
+}
+.myvne_taskbar .log_txt .ic-user {
+    fill: #bdbdbd;
+    margin-right: 5px;
+    margin-top: -2px;
 }
 
 .footer{
